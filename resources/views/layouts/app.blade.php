@@ -367,13 +367,7 @@
         <h2 class="title">Categories</h2>
         <div class="landing-categories owl-carousel">
             <div class="item">
-                <div class="card rounded-0 border-0 text-center">
-                    <img src="assets/img/vegetables.jpg">
-                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                        <!-- <h4 class="card-title">Vegetables</h4> -->
-                        <a href="shop.html" class="btn btn-primary btn-lg">Vegetables</a>
-                    </div>
-                </div>
+              
             </div>
             <div class="item">
                 <div class="card rounded-0 border-0 text-center">

@@ -101,7 +101,7 @@
             </div>
         </nav>
     </div>
- 
+
 
     {{-- <style>
         #categories {
@@ -157,14 +157,14 @@
      --}}
 
 
-     <div id="page-content" class="page-content">
+    <div id="page-content" class="page-content">
         <div class="banner">
             <div class="jumbotron jumbotron-video text-center bg-dark mb-0 rounded-0">
                 <video width="100%" preload="auto" loop autoplay muted>
                     <source src='assests/media/explore.mp4' type='video/mp4' />
                     <source src='assests/media/explore.webm' type='video/webm' />
                 </video>
-    
+
                 <div class="container">
                     <h1 class="pt-5 text-white">
                         Save time and leave the<br>
@@ -173,7 +173,7 @@
                     <p class="lead text-white">
                         Always Fresh Everyday.
                     </p>
-    
+
                     <div class="row justify-content-center">
                         <div class="col-md-4 mb-4">
                             <div class="card text-center">
@@ -235,60 +235,57 @@
         </div>
     </div>
 
-    
-    
-
-        <style>
-          .banner {
-    position: relative;
-    padding: 0rem 0;
-}
-
-.jumbotron-video video {
-    object-fit: cover;
-    height: 100%;
-}
-
-.card {
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.card-icon {
-    margin-bottom: 1rem;
-}
-
-.card-icon-i {
-    font-size: 3rem;
-    color: #007bff; /* Adjust to fit your theme */
-}
-
-.card-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #6c757d;
-}
-
-.text-white {
-    color: #fff;
-}
-
-        </style>
 
 
-  
-    
+
+    <style>
+        .banner {
+            position: relative;
+            padding: 0rem 0;
+        }
+
+        .jumbotron-video video {
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .card {
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-icon {
+            margin-bottom: 1rem;
+        }
+
+        .card-icon-i {
+            font-size: 3rem;
+            color: #007bff;
+            /* Adjust to fit your theme */
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+    </style>
 
 
-    <div id="page-content" class="page-content" style="padding: 20px;">
-        <!-- Page Content -->
-        @yield('content')
-    </div>
+
+
+
+
+
 
 
 
@@ -365,57 +362,104 @@
 
     <section id="categories" class="pb-0 gray-bg">
         <h2 class="title">Categories</h2>
-        <div class="landing-categories owl-carousel">
-            <div class="item">
-              
-            </div>
-            <div class="item">
+        <div class="landing-categories">
+            <div class="card-item">
                 <div class="card rounded-0 border-0 text-center">
-                    <img src="assets/img/fruits.jpg">
+                    <img src="assests/img/fruits.jpg" alt="Fruits">
                     <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                        <!-- <h4 class="card-title">Fruits</h4> -->
                         <a href="shop.html" class="btn btn-primary btn-lg">Fruits</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="card-item">
                 <div class="card rounded-0 border-0 text-center">
-                    <img src="assets/img/meats.jpg">
+                    <img src="assests/img/meats.jpg" alt="Meats">
                     <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                        <!-- <h4 class="card-title">Meats</h4> -->
                         <a href="shop.html" class="btn btn-primary btn-lg">Meats</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="card-item">
                 <div class="card rounded-0 border-0 text-center">
-                    <img src="assets/img/fish.jpg">
+                    <img src="assests/img/fish.jpg" alt="Fishes">
                     <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                        <!-- <h4 class="card-title">Fishes</h4> -->
                         <a href="shop.html" class="btn btn-primary btn-lg">Fishes</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="card-item">
                 <div class="card rounded-0 border-0 text-center">
-                    <img src="assets/img/frozen.jpg">
+                    <img src="assests/img/frozen.jpg" alt="Frozen Foods">
                     <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                        <!-- <h4 class="card-title">Frozen Foods</h4> -->
                         <a href="shop.html" class="btn btn-primary btn-lg">Frozen Foods</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="card-item">
                 <div class="card rounded-0 border-0 text-center">
-                    <img src="assets/img/package.jpg">
+                    <img src="assests/img/package.jpg" alt="Package">
                     <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                        <!-- <h4 class="card-title">Package</h4> -->
                         <a href="shop.html" class="btn btn-primary btn-lg">Package</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <style>
+        .landing-categories {
+            display: flex;
+            flex-wrap: nowrap;
+            /* Keep items in a single row */
+            overflow-x: auto;
+            /* Allow horizontal scrolling if necessary */
+        }
+
+        .card-item {
+            flex: 1 0 auto;
+            /* Allow items to grow and shrink */
+            margin: 0 10px;
+            /* Space between items */
+        }
+
+        .card img {
+            width: 100%;
+            /* Ensure the image fits the card */
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $('.landing-categories').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+
+
+    <div id="page-content" class="page-content" style="padding: 20px;">
+        <!-- Page Content -->
+        @yield('content')
+    </div>
 
     <footer>
         <div class="container">
@@ -523,6 +567,8 @@
     <script src="{{ asset('assets/packages/thumbelina/thumbelina.js') }}"></script>
     <script src="{{ asset('assets/packages/bootstrap-touchspin/bootstrap-touchspin.js') }}"></script>
     <script src="{{ asset('assets/js/theme.js') }}"></script>
+
+
 
 </body>
 

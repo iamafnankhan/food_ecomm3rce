@@ -12,6 +12,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Add this to your <head> section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     
     <link href="{{ asset('assets/fonts/sb-bistro/sb-bistro.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/fonts/font-awesome/font-awesome.css') }}" rel="stylesheet" type="text/css">
@@ -236,13 +239,32 @@
                 <div class="col-md-3">
                      <h5>Get Our App</h5>
                      <ul class="mb-0">
-                         <li class="download-app">
-                             <a href="#"><img src="assests\img\playstore.png"></a>
-                         </li>
-                         <li style="height: 200px">
-                             <div class="mockup">
-                                 <img src="assets/img/mockup.png">
-                             </div>
+                        <style>
+                            .download-app img {
+                                width: 300px; /* Adjust width as needed */
+                                height: auto; /* Maintain aspect ratio */
+                            }
+                        </style>
+                        
+                        <li class="download-app">
+                            <a href="#"><img src="assests/img/playstore.png"></a>
+                        </li>
+                        
+                         <li style="height: 300px">
+                            
+
+                             <style>
+                                .mockup img {
+                                    max-width: 300%;
+                                    height: auto;
+                                    width: 50%; /* Adjust the percentage to resize the image */
+                                }
+                            </style>
+                            
+                            <div class="mockup">
+                                <img src="assests\img\mockup.png">
+                            </div>
+                            
                          </li>
                      </ul>
                 </div>

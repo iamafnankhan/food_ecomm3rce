@@ -73,29 +73,40 @@
                         <li class="nav-item">
                             <a href="shop.html" class="nav-link">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="register.html" class="nav-link">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="login.html" class="nav-link">Login</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="color: white;">
-                                John Doe
-                            </a>
+                        @guest
+                            @if (Route::has('register'))
 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="transaction.html">Transactions History</a>
-                                <a class="dropdown-item" href="setting.html">Settings</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="cart.html" class="nav-link">
-                                <i class="fa fa-shopping-basket"></i> <span class="badge bg-primary">5</span>
-                            </a>
-                        </li>
+
+                                <li class="nav-item">
+                                    <a href="{{route("register")}}" class="nav-link">Register</a>
+                                </li>
+                          @endif
+
+                            @if (Route::has('login'))
+
+                            <li class="nav-item">
+                                <a href="{{route("login")}}" class="nav-link">Login</a>
+                            </li>
+                            @endif
+                            @else
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="javascript:void(0)" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                                    <img src="assests\img\images.png" alt="Profile Image" class="rounded-circle" width="30" height="30" style="margin-right: 10px;">
+                                    {{ Auth::user()->name }}
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="transaction.html">Transactions History</a>
+                                    <a class="dropdown-item" href="setting.html">Settings</a>
+                                </div>
+                            </li>
+                            @endguest
+                            <li class="nav-item">
+                                <a href="cart.html" class="nav-link">
+                                    <i class="fa fa-shopping-basket"></i> <span class="badge bg-primary">5</span>
+                                </a>
+                            </li>
+                          
                     </ul>
                 </div>
             </div>

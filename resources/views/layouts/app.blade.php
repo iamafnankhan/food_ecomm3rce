@@ -122,59 +122,7 @@
     </div>
 
 
-    {{-- <style>
-        #categories {
-            padding: 60px 15px;
-        }
-    
-        .title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-    
-        .landing-categories .card {
-            position: relative;
-            overflow: hidden;
-        }
-    
-        .landing-categories .card img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.3s;
-        }
-    
-        .landing-categories .card:hover img {
-            transform: scale(1.1); /* Slight zoom effect on hover */
-        }
-    
-        .landing-categories .card-img-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .landing-categories .btn {
-            padding: 10px 20px;
-            font-size: 1rem; /* Adjust button size */
-        }
-    
-        /* Ensure responsiveness */
-        @media (max-width: 767px) {
-            .landing-categories .btn {
-                font-size: 0.875rem; /* Smaller button text on smaller screens */
-            }
-        }
-    </style>
-     --}}
-
+  
 
     <div id="page-content" class="page-content">
         <div class="banner">

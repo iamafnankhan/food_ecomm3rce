@@ -40,7 +40,7 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
-    {{-- <style>
+    <style>
         /* Custom CSS for Navbar */
         .navbar-brand img {
             height: 40px;
@@ -48,11 +48,11 @@
             width: auto;
             /* Maintain aspect ratio */
         }
-    </style> --}}
+    </style>
 </head>
 
 <body>
-    {{-- <div id="app">
+    <div id="app">
         <!-- Navbar -->
         <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent" id="page-navigation">
             <div class="container">
@@ -119,12 +119,12 @@
                 </div>
             </div>
         </nav>
-    </div> --}}
+    </div>
 
 
   
 
-    {{-- <div id="page-content" class="page-content">
+    <div id="page-content" class="page-content">
         <div class="banner">
             <div class="jumbotron jumbotron-video text-center bg-dark mb-0 rounded-0">
                 <video width="100%" preload="auto" loop autoplay muted>
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
 
 
 
@@ -257,7 +257,7 @@
 
 
     </div>
-    {{-- <section id="why">
+    <section id="why">
         <h2 class="title">Why Freschery</h2>
         <div class="container">
             <div class="row">
@@ -325,9 +325,9 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 
-    {{-- <section id="categories" class="pb-0 gray-bg">
+    <section id="categories" class="pb-0 gray-bg">
         <h2 class="title">Categories</h2>
         <div class="landing-categories">
             <div class="card-item">
@@ -371,8 +371,8 @@
                 </div>
             </div>
         </div>
-    </section> --}}
-    {{-- <style>
+    </section>
+    <style>
         .landing-categories {
             display: flex;
             flex-wrap: nowrap;
@@ -392,9 +392,9 @@
             width: 100%;
             /* Ensure the image fits the card */
         }
-    </style> --}}
+    </style>
 
-    {{-- <script>
+    <script>
         $(document).ready(function() {
             $('.landing-categories').slick({
                 infinite: true,
@@ -419,7 +419,7 @@
                 ]
             });
         });
-    </script> --}}
+    </script>
 
 
 
@@ -428,7 +428,7 @@
         @yield('content')
     </div>
 
-    {{-- <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -521,7 +521,7 @@
             </div>
         </div>
         <p class="copyright">&copy; 2018 Freshcery | Groceries Organic Store. All rights reserved.</p>
-    </footer> --}}
+    </footer>
 
     <!-- Scripts -->
     <script src="{{ asset('assets/js/jquery.js') }}"></script>
